@@ -1,6 +1,6 @@
 # Personal-Site
 Personal Portfolio website
 
-URL: http://juliangrunauer.surge.sh
+URL: http://juliangrunauer.com
 
 
