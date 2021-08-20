@@ -229,21 +229,25 @@ hr {
 }
 
 @-webkit-keyframes bounce {
+
     0%,
     100% {
         -webkit-transform: scale(0.0)
     }
+
     50% {
         -webkit-transform: scale(1.0)
     }
 }
 
 @keyframes bounce {
+
     0%,
     100% {
         transform: scale(0.0);
         -webkit-transform: scale(0.0);
     }
+
     50% {
         transform: scale(1.0);
         -webkit-transform: scale(1.0);
@@ -271,6 +275,7 @@ a {
 }
 
 @-webkit-keyframes bounce {
+
     0%,
     20%,
     50%,
@@ -279,10 +284,12 @@ a {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
+
     40% {
         -webkit-transform: translateY(-30px);
         transform: translateY(-30px);
     }
+
     60% {
         -webkit-transform: translateY(-15px);
         transform: translateY(-15px);
@@ -290,6 +297,7 @@ a {
 }
 
 @keyframes bounce {
+
     0%,
     20%,
     50%,
@@ -298,10 +306,12 @@ a {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
+
     40% {
         -webkit-transform: translateY(-30px);
         transform: translateY(-30px);
     }
+
     60% {
         -webkit-transform: translateY(-15px);
         transform: translateY(-15px);
@@ -495,6 +505,8 @@ h1 {
 
 img.img-responsive {
     margin: auto;
+    border-radius: 15px;
+    padding: 8px;
 }
 
 #contact>div.container.main-container.pad>div>div>div>div.col-md-5 {
@@ -677,6 +689,7 @@ b i:last-child {
         -webkit-transform: translateY(40px);
         transform: translateY(40px);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -690,6 +703,7 @@ b i:last-child {
         -webkit-transform: translateY(40px);
         transform: translateY(40px);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -701,6 +715,7 @@ b i:last-child {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         -webkit-transform: translateY(20px);
@@ -712,6 +727,7 @@ b i:last-child {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         -webkit-transform: translateY(20px);
@@ -816,10 +832,12 @@ b i:last-child {
         opacity: 0;
         -webkit-transform: translateZ(-20px) rotateX(90deg);
     }
+
     60% {
         opacity: 1;
         -webkit-transform: translateZ(-20px) rotateX(-10deg);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateZ(-20px) rotateX(0deg);
@@ -832,11 +850,13 @@ b i:last-child {
         -webkit-transform: translateZ(-20px) rotateX(90deg);
         transform: translateZ(-20px) rotateX(90deg);
     }
+
     60% {
         opacity: 1;
         -webkit-transform: translateZ(-20px) rotateX(-10deg);
         transform: translateZ(-20px) rotateX(-10deg);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateZ(-20px) rotateX(0deg);
@@ -849,10 +869,12 @@ b i:last-child {
         opacity: 1;
         -webkit-transform: translateZ(-20px) rotateX(0);
     }
+
     60% {
         opacity: 0;
         -webkit-transform: translateZ(-20px) rotateX(-100deg);
     }
+
     100% {
         opacity: 0;
         -webkit-transform: translateZ(-20px) rotateX(-90deg);
@@ -865,11 +887,13 @@ b i:last-child {
         -webkit-transform: translateZ(-20px) rotateX(0);
         transform: translateZ(-20px) rotateX(0);
     }
+
     60% {
         opacity: 0;
         -webkit-transform: translateZ(-20px) rotateX(-100deg);
         transform: translateZ(-20px) rotateX(-100deg);
     }
+
     100% {
         opacity: 0;
         -webkit-transform: translateZ(-20px) rotateX(-90deg);
@@ -1204,7 +1228,7 @@ footer img {
 }
 
 .border-top {
-    border-top: 1px solid #dee2e6!important;
+    border-top: 1px solid #dee2e6 !important;
     padding-top: 50px;
 }
 
@@ -1213,9 +1237,20 @@ footer img {
 ==================================================*/
 
 #passon {
+    color: white;
+    padding: 150px 0 150px;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .4)), url(../img/PassOn/top.jpg);
+    /* background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/PassOn/top.jpg); */
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center center;
+    text-align: center;
+}
+
+#palette {
     color: #333;
     padding: 150px 0 150px;
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .4)), url(../img/PassOn/top.jpg);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .4)), url(../img/Palette/top.jpg);
     /* background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/PassOn/top.jpg); */
     background-size: cover;
     /* background-attachment: fixed; */
@@ -1226,7 +1261,7 @@ footer img {
 #fitwit {
     color: #333;
     padding: 150px 0 150px;
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .4)), url(../img/FitMemory/top.jpg);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .4)), url(../img/FitMemory/top.jpg);
     /* background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/PassOn/top.jpg); */
     background-size: cover;
     /* background-attachment: fixed; */
@@ -1244,6 +1279,10 @@ footer img {
 }
 
 #fitwit h3 {
+    color: #ffbf00;
+}
+
+#palette h3 {
     color: #ffbf00;
 }
 
@@ -1467,20 +1506,25 @@ textarea:focus {
     nav {
         display: block;
     }
+
     #hide-nav {
         display: none;
     }
+
     box-logo img {
         width: 250px;
         margin-top: -50px;
         margin-left: -40px;
     }
+
     .box-headline {
         margin-top: -150px;
     }
+
     .box-intro {
         height: 70vh;
     }
+
     footer {
         margin-top: 250px;
     }
@@ -1490,12 +1534,15 @@ textarea:focus {
     .responsive-broken {
         display: none;
     }
+
     footer {
         display: none;
     }
+
     .responsive-message {
         display: initial;
     }
+
     figure {
         width: 50%;
     }
