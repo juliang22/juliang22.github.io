@@ -509,6 +509,12 @@ img.img-responsive {
     padding: 8px;
 }
 
+.big_pic {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 #contact>div.container.main-container.pad>div>div>div>div.col-md-5 {
     margin-right: 70px;
 }
@@ -902,7 +908,6 @@ b i:last-child {
 }
 
 .skills {
-    background-color: #FCFCFC;
     height: 100vh;
 }
 
@@ -914,6 +919,9 @@ b i:last-child {
 
 /* portfolio section
 ==================================================*/
+.portfolio {
+    background-color: #FCFCFC;
+}
 
 .portfolio .categories-grid span {
     font-size: 30px;
@@ -1511,8 +1519,20 @@ textarea:focus {
         display: block;
     }
 
-    #hide-nav {
-        display: none;
+    .col-md-5.nav-itm {
+        width: 600px;
+    }
+
+    .cta {
+        height: 200px
+    }
+
+    .about-me {
+        height: 130vh;
+    }
+
+    body {
+        font-size: 13px;
     }
 
     box-logo img {
@@ -1528,26 +1548,105 @@ textarea:focus {
     .box-intro {
         height: 70vh;
     }
-
-    footer {
-        margin-top: 250px;
-    }
 }
 
 @media screen and (max-width: 1000px) {
-    .responsive-broken {
+    body {
+        font-size: 11px;
+    }
+
+    #hide-nav {
         display: none;
     }
 
-    footer {
+    #profile {
+        width: 350px;
+    }
+
+    .bye_line {
         display: none;
     }
 
-    .responsive-message {
-        display: initial;
+    .big_text {
+        display: none;
     }
 
-    figure {
-        width: 50%;
+    .position-title>h2 {
+        font-size: 40px;
+        line-height: 30px;
     }
+
+    #contact>div.container.main-container.pad>div>div>div>div.col-md-5 {
+        margin: 0
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .cta>h2 {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .cta-btn {
+        font-size: 10px;
+    }
+
+    .cta {
+        height: 150px;
+    }
+
+    .about-me {
+        height: 110vh;
+    }
+
+    img.img-responsive {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    div.container.main-container>h1 {
+        margin-bottom: 25px;
+    }
+
+    .about-me {
+        height: 140vh;
+    }
+
+    .padd {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .box-intro {
+        display: none;
+    }
+
+    .about-me {
+        margin-top: 100px;
+        height: 150vh;
+    }
+
+    .row-eq-height {
+        display: -webkit-box;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h3 {
+        font-size: 18px;
+    }
+
+    .portfolio_filter {
+        margin: 0 60px;
+    }
+
+    .skills {
+        height: 110vh;
+    }
+
 }
