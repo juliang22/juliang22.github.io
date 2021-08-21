@@ -906,6 +906,11 @@ b i:last-child {
     height: 100vh;
 }
 
+.about-me {
+    background-color: #FCFCFC;
+    height: 120vh;
+}
+
 
 /* portfolio section
 ==================================================*/
@@ -1060,7 +1065,6 @@ footer {
     background: #333333;
     position: absolute;
     width: 100%;
-    margin-top: 150px;
 }
 
 #icons {
