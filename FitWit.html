@@ -23,6 +23,9 @@
     <!-- modernizr -->
     <script src="js/modernizr.js"></script>
 
+    <!-- Lazy Load Images -->
+    <script defer src="js/lazyload.js"></script>
+
     <!-- Ionicons -->
     <script type="module"
         src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
@@ -55,8 +58,13 @@
     <div class="container-fluid">
         <!-- box header -->
         <div class="box-logo">
-            <a href="index.html"><img src="img/logo.png" width="120"
-                    alt="Logo"></a>
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo" style="width: 330px;
+                position: absolute;
+                height: 200px;
+                margin-top: -50px;
+                margin-left: -40px;">
+            </a>
         </div>
         <div class="row justify-content-end" id="hide-nav">
             <div class="col-md-5 nav-itm" style="margin-bottom: 25px;">
@@ -207,8 +215,9 @@
             <div class="hidden-md hidden-lg hidden-sm col-xs-3"></div>
             <div class="col-md-3 col-sm-6 col-xs-6">
                 <figure>
-                    <img src="img/FitMemory/reward.jpg" alt="Reward Screen"
-                        class="img-responsive" />
+                    <img src="blank.gif" class="lazy img-responsive"
+                        data-src="img/FitMemory/reward.jpg" alt="Reward Screen"
+                        width="247" />
                     <div class="h-60"></div>
                 </figure>
             </div>
@@ -282,8 +291,9 @@
             <div class="hidden-md hidden-lg hidden-sm col-xs-3"></div>
             <div class="col-md-3 col-md-offset-1 col-sm-6 col-xs-6">
                 <figure>
-                    <img src="img/FitMemory/progress.jpg" alt="Reward Screen"
-                        class="img-responsive" />
+                    <img src="blank.gif" class="lazy img-responsive"
+                        data-src="img/FitMemory/progress.jpg"
+                        alt="Simplify user data" width="247" />
                     <div class="h-60"></div>
                 </figure>
             </div>
@@ -305,8 +315,10 @@
         <!-- Sort Section-->
         <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-6">
-                <figure><img src="img/FitMemory/gamification.jpg" alt=""
-                        class="img-responsive" />
+                <figure>
+                    <img src="blank.gif" class="lazy img-responsive"
+                        data-src="img/FitMemory/gamification.jpg"
+                        alt="Gamification" width="247" />
                     <div class="h-120"></div>
                 </figure>
             </div>
@@ -326,8 +338,9 @@
             </div>
             <div class="col-md-3 col-sm-3 col-xs-6">
                 <figure>
-                    <img src="img/FitMemory/brian.jpg" alt=""
-                        class="img-responsive" />
+                    <img src="blank.gif" class="lazy img-responsive"
+                        data-src="img/FitMemory/brian.jpg" alt="Brain the Brain"
+                        width="247" />
                     <div class="h-120"></div>
                 </figure>
             </div>

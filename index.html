@@ -37,6 +37,7 @@
 
     <!-- modernizr -->
     <script async src="js/modernizr.js"></script>
+    <script defer src="js/lazyload.js"></script>
 
     <!-- Ionicons -->
     <script type="module"
@@ -58,21 +59,26 @@
 <body>
     <div class="responsive-broken">
         <!-- Preloader -->
-        <!-- <div id="preloader">
+        <div id="preloader">
             <div class="pre-container">
                 <div class="spinner">
                     <div class="double-bounce1"></div>
                     <div class="double-bounce2"></div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- end Preloader -->
 
         <div class="container-fluid">
             <!-- Nav Bar -->
             <div class="box-logo">
-                <a href="index.html"><img src="img/logo.png" width="120"
-                        alt="Logo"></a>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo" style="width: 330px;
+                    position: absolute;
+                    height: 200px;
+                    margin-top: -50px;
+                    margin-left: -40px;">
+                </a>
             </div>
             <div class="row justify-content-end" id="hide-nav">
                 <div class="col-md-5 nav-itm">
@@ -113,9 +119,9 @@
                     <div class="container">
                         <div class="row justify-content-around">
                             <div class="col-md-5 col-sm-6">
-                                <img src="img/Profile.jpeg"
-                                    class="img-responsive" id="profile"
-                                    alt="" />
+                                <img src="blank.gif" class="lazy img-responsive"
+                                    id="profile" data-src="img/Profile.jpeg"
+                                    width="350">
                                 <div class="profile-bottom padd">
                                     <p>
                                         Hi there! My name is <b>Julian
@@ -242,7 +248,6 @@
                         </div>
 
                         <!-- Product Management -->
-
                         <row>
                             <div class="col-md-6 col-sm-12 big_pic">
                                 <a href="/Palette.html" class="portfolio_item"
@@ -483,13 +488,17 @@
                             <!-- end single work -->
                         </div>
                     </div>
-                    <!--——————————————————————— Filtered out boxes --———————————————————————-->
 
+                    <!--——————————————————————— Filtered out boxes --———————————————————————-->
                     <!-- single work -->
-                    <div class="col-md-3 col-sm-3 col-xs-4 Code">
+                    <!-- <div class="col-md-3 col-sm-3 col-xs-4 Code"
+                        style="padding-bottom: 250px; width: 250px; height: 250px;">
+                    </div> -->
+                    <div class="col-md-3 col-sm-3 col-xs-4 Code Design">
                         <a href="Palette.html" class="portfolio_item hide">
-                            <img src="img/Palette/palette.jpg" alt="image"
-                                class="img-responsive" />
+                            <img src="blank.gif" class="lazy img-responsive"
+                                data-src="img/Palette/palette.jpg" width="356"
+                                height="356">
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
@@ -500,10 +509,11 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-4 Code">
+                    <div class="col-md-3 col-sm-3 col-xs-4 Code PM Design">
                         <a href="PassOn.html" class="portfolio_item hide">
-                            <img src="img/PassOn/mockup1.jpg" alt="image"
-                                class="img-responsive" />
+                            <img src="blank.gif" class="lazy img-responsive"
+                                data-src="img/PassOn/mockup1.jpg" width="356"
+                                height="356">
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
@@ -517,15 +527,17 @@
                     <!-- end single work -->
 
                     <!-- single work -->
-                    <div class="col-md-3 col-sm-3 col-xs-4 PM">
-                        <a href="PassOn.html" class="portfolio_item hide">
-                            <img src="img/PassOn/mockup1.jpg" alt="image"
-                                class="img-responsive" />
+                    <div class="col-md-3 col-sm-3 col-xs-4 Code">
+                        <a href="https://drive.google.com/file/d/1U34MIBG6Qb5KqKTYAfZevZwAN950PO0i/view?usp=sharing"
+                            class="portfolio_item hide" target="_blank">
+                            <img src="blank.gif" class="lazy img-responsive"
+                                data-src="img/told.ly/mockup1.jpg" width="356"
+                                height="356">
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>PassOn</span>
-                                        <em>Product Management</em>
+                                        <span>Told.ly</span>
+                                        <em>Code</em>
                                     </div>
                                 </div>
                             </div>
@@ -534,16 +546,75 @@
                     <!-- end single work -->
 
                     <!-- single work -->
-                    <div class="col-md-3 col-sm-3 col-xs-4 Design">
-                        <a href="https://www.figma.com/file/evCqUdYj0hNBA5YvPTaKHs/PassOn?node-id=1%3A3460"
+                    <div class="col-md-3 col-sm-3 col-xs-4 Code">
+                        <a href="https://drive.google.com/file/d/1xiyGpTgE3cFHiKmTPOU9A6FEBbp9uPD5/view?usp=sharing"
                             class="portfolio_item hide" target="_blank">
-                            <img src="img/PassOn/mockup1.jpg" alt="image"
-                                class="img-responsive" />
+                            <img src="blank.gif" class="lazy img-responsive"
+                                data-src="img/Code/VR.jpg" width="356"
+                                height="356" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>PassOn</span>
-                                        <em>Design</em>
+                                        <span>AR/VR</span>
+                                        <em>Code</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+
+                    <!-- single work -->
+                    <div class="col-md-3 col-sm-3 col-xs-4 Code"
+                        style="padding-bottom:250px">
+                        <a href="https://github.com/juliang22/Unbiased-Word-Similarity-Scores-With-Dictionaries"
+                            class="portfolio_item hide" target="_blank">
+                            <img src="blank.gif" class="lazy img-responsive"
+                                data-src="img/Code/dict.jpg" width="356"
+                                height="356" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Word-Similarity Algorithm</span>
+                                        <em>Code</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+
+                    <!-- single work -->
+                    <div class="col-md-3 col-sm-3 col-xs-4 Code">
+                        <a href="https://www.dartmouth.edu/~phillab/"
+                            class="portfolio_item hide" target="_blank">
+                            <img src="blank.gif" class="lazy img-responsive"
+                                data-src="img/Code/phillab.jpg" width="356"
+                                height="356" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Cognitive Science Website</span>
+                                        <em>Code</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+
+                    <!-- single work -->
+                    <div class="col-md-3 col-sm-3 col-xs-4 Code">
+                        <a href="https://github.com/juliang22"
+                            class="portfolio_item hide" target="_blank">
+                            <img src="blank.gif" class="lazy img-responsive"
+                                data-src="img/Code/misc.jpg" width="356"
+                                height="356" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Miscellaneous Code</span>
+                                        <em>Code</em>
                                     </div>
                                 </div>
                             </div>
@@ -555,8 +626,9 @@
                     <div class="col-md-3 col-sm-3 col-xs-4 Writing">
                         <a href="https://drive.google.com/file/d/1UsSRB1lLwF6Z3lATAL1RGusddE9869ga/view?usp=sharing"
                             class="portfolio_item hide" target="_blank">
-                            <img src="img/writing/IP.jpg" alt="image"
-                                class="img-responsive" />
+                            <img src="blank.gif" class="lazy img-responsive"
+                                data-src="img/writing/IP.jpg" width="356"
+                                height="356" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
@@ -574,8 +646,9 @@
                     <div class="col-md-3 col-sm-3 col-xs-4 Writing">
                         <a href="https://docs.google.com/document/d/11G9LXhMtEkV1M1kbtE2dCAkEJ1Ksxt4VKJJeRJa1pPw/edit?usp=sharing"
                             class="portfolio_item hide" target="_blank">
-                            <img src="img/writing/psych.jpg" alt="image"
-                                class="img-responsive" />
+                            <img src="blank.gif" class="lazy img-responsive"
+                                data-src="img/writing/psych.jpg" width="356"
+                                height="356" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
@@ -592,8 +665,9 @@
                     <div class="col-md-3 col-sm-3 col-xs-4 Writing">
                         <a href="https://docs.google.com/document/d/1j1HK028w68tmyYSLonp1Im9jB2F1cmPvT6sWbPQztWk/edit?usp=sharing"
                             class="portfolio_item hide" target="_blank">
-                            <img src="img/writing/self.jpg" alt="image"
-                                class="img-responsive" />
+                            <img src="blank.gif" class="lazy img-responsive"
+                                data-src="img/writing/self.jpg" width="356"
+                                height="356" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
@@ -610,8 +684,9 @@
                     <div class="col-md-3 col-sm-3 col-xs-4 Writing">
                         <a href="https://docs.google.com/document/d/1HBeqNDq1dk07y5EXkLSgvCSh5_bqzvvRtR5C8Ag2pE0/edit?usp=sharing"
                             class="portfolio_item hide" target="_blank">
-                            <img src="img/writing/ToM.jpg" alt="image"
-                                class="img-responsive" />
+                            <img src="blank.gif" class="lazy img-responsive"
+                                data-src="img/writing/ToM.jpg" width="356"
+                                height="356" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
@@ -628,8 +703,9 @@
                     <div class="col-md-3 col-sm-3 col-xs-4 Hobbies">
                         <a href="https://www.youtube.com/watch?v=SZ0fN5gMEiI"
                             class="portfolio_item hide" target="_blank">
-                            <img src="img/Hobbies/yoyo.jpg" alt="image"
-                                class="img-responsive" />
+                            <img src="blank.gif" class="lazy img-responsive"
+                                data-src="img/Hobbies/yoyo.jpg" width="356"
+                                height="356" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
@@ -643,46 +719,11 @@
                     <!-- end single work -->
 
                     <!-- single work -->
-                    <div class="col-md-3 col-sm-3 col-xs-4 Code">
-                        <a href="https://drive.google.com/file/d/1U34MIBG6Qb5KqKTYAfZevZwAN950PO0i/view?usp=sharing"
-                            class="portfolio_item hide" target="_blank">
-                            <img src="img/told.ly/mockup1.jpg" alt="image"
-                                class="img-responsive" />
-                            <div class="portfolio_item_hover">
-                                <div class="portfolio-border clearfix">
-                                    <div class="item_info">
-                                        <span>Told.ly</span>
-                                        <em>Code</em>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- end single work -->
-
-                    <!-- single work -->
-                    <div class="col-md-3 col-sm-3 col-xs-4 Code">
-                        <a href="https://drive.google.com/file/d/1xiyGpTgE3cFHiKmTPOU9A6FEBbp9uPD5/view?usp=sharing"
-                            class="portfolio_item hide" target="_blank">
-                            <img src="img/Code/VR.jpg" alt="image"
-                                class="img-responsive" />
-                            <div class="portfolio_item_hover">
-                                <div class="portfolio-border clearfix">
-                                    <div class="item_info">
-                                        <span>AR/VR</span>
-                                        <em>Code</em>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- end single work -->
-
-                    <!-- single work -->
                     <div class="col-md-3 col-sm-3 col-xs-4 Design">
                         <a href="FitWit.html" class="portfolio_item hide">
-                            <img src="img/FitMemory/mockup1.jpg" alt="image"
-                                class="img-responsive" />
+                            <img src="blank.gif" class="lazy img-responsive"
+                                data-src="img/FitMemory/mockup1.jpg" width="356"
+                                height="356" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
@@ -699,67 +740,14 @@
                     <div class="col-md-3 col-sm-3 col-xs-4 Hobbies">
                         <a href="https://photos.app.goo.gl/gN7CRXfYQ7hnT3NB9"
                             class="portfolio_item hide" target="_blank">
-                            <img src="img/Hobbies/climbing.jpg" alt="image"
-                                class="img-responsive" />
+                            <img src="blank.gif" class="lazy img-responsive"
+                                data-src="img/Hobbies/climbing.jpg" width="356"
+                                height="356" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
                                         <span>Climbing</span>
                                         <em>Hobbies</em>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- end single work -->
-
-                    <!-- single work -->
-                    <div class="col-md-3 col-sm-3 col-xs-4 Code">
-                        <a href="https://github.com/juliang22/Unbiased-Word-Similarity-Scores-With-Dictionaries"
-                            class="portfolio_item hide" target="_blank">
-                            <img src="img/Code/dict.jpg" alt="image"
-                                class="img-responsive" />
-                            <div class="portfolio_item_hover">
-                                <div class="portfolio-border clearfix">
-                                    <div class="item_info">
-                                        <span>Word-Similarity Algorithm</span>
-                                        <em>Code</em>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- end single work -->
-
-                    <!-- single work -->
-                    <div class="col-md-3 col-sm-3 col-xs-4 Code">
-                        <a href="https://www.dartmouth.edu/~phillab/"
-                            class="portfolio_item hide" target="_blank">
-                            <img src="img/Code/phillab.jpg" alt="image"
-                                class="img-responsive" />
-                            <div class="portfolio_item_hover">
-                                <div class="portfolio-border clearfix">
-                                    <div class="item_info">
-                                        <span>Cognitive Science Website</span>
-                                        <em>Code</em>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- end single work -->
-
-                    <!-- single work -->
-                    <div class="col-md-3 col-sm-3 col-xs-4 Code">
-                        <a href="https://github.com/juliang22"
-                            class="portfolio_item hide" target="_blank">
-                            <img src="img/Code/misc.jpg" alt="image"
-                                class="img-responsive" />
-                            <div class="portfolio_item_hover">
-                                <div class="portfolio-border clearfix">
-                                    <div class="item_info">
-                                        <span>Miscellaneous Code</span>
-                                        <em>Code</em>
                                     </div>
                                 </div>
                             </div>

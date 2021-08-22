@@ -23,6 +23,9 @@
     <!-- modernizr -->
     <script src="js/modernizr.js"></script>
 
+    <!-- Lazy Load Images -->
+    <script defer src="js/lazyload.js"></script>
+
     <!-- Ionicons -->
     <script type="module"
         src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
@@ -55,8 +58,13 @@
     <div class="container-fluid">
         <!-- box header -->
         <div class="box-logo">
-            <a href="index.html"><img src="img/logo.png" width="120"
-                    alt="Logo"></a>
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo" style="width: 330px;
+                position: absolute;
+                height: 200px;
+                margin-top: -50px;
+                margin-left: -40px;">
+            </a>
         </div>
         <div class="row justify-content-end" id="hide-nav">
             <div class="col-md-5 nav-itm" style="margin-bottom: 25px;">
@@ -233,8 +241,9 @@
             <div class="hidden-md hidden-lg col-sm-1 col-xs-3"></div>
             <div class="col-md-3 col-sm-3 col-xs-6">
                 <figure>
-                    <img src="img/PassOn/learn.jpg" alt="Learn Tab"
-                        class="img-responsive" />
+                    <img src="blank.gif" class="lazy img-responsive"
+                        data-src="img/PassOn/learn.jpg" alt="Learn Tab"
+                        width="247">
                     <div class="h-60"></div>
                 </figure>
             </div>
@@ -313,8 +322,12 @@
             <div class="col-sm-1 col-xs-3"></div>
             <div class="col-md-3 col-sm-3 col-xs-6">
                 <figure>
-                    <img src="img/PassOn/propose.jpg" alt="Propose Skill Screen"
-                        class="img-responsive" />
+                    <img src="blank.gif" class="lazy img-responsive"
+                        data-src="img/PassOn/propose.jpg"
+                        alt="Propose Skill Screen" width="247">
+
+                    <!-- <img src="img/PassOn/propose.jpg" alt="Propose Skill Screen"
+                        class="img-responsive" /> -->
                     <div class="h-60"></div>
                 </figure>
             </div>
@@ -325,8 +338,12 @@
             <div class="hidden-md hidden-lg col-sm-1 col-xs-3"></div>
             <div class="col-md-3 col-sm-3 col-xs-6">
                 <figure>
-                    <img src="img/PassOn/interact.jpg" alt="Learn Tab"
-                        class="img-responsive" />
+                    <img src="blank.gif" class="lazy img-responsive"
+                        data-src="img/PassOn/interact.jpg" alt="Learn Tab"
+                        width="247">
+
+                    <!-- <img src="img/PassOn/interact.jpg" alt="Learn Tab"
+                        class="img-responsive" /> -->
                     <div class="h-60"></div>
                 </figure>
             </div>
@@ -378,8 +395,11 @@
         <!-- Sort Section-->
         <div class="row row-eq-height ">
             <div class="col-md-6 col-sm-6 col-xs-6 big_pic">
-                <img src="img/PassOn/splash.jpg" alt=""
-                    class="img-responsive" />
+                <img src="blank.gif" class="lazy img-responsive"
+                    data-src="img/PassOn/splash.jpg" alt="Home" width="555">
+
+                <!-- <img src="img/PassOn/splash.jpg" alt=""
+                    class="img-responsive" /> -->
                 <div class="h-120"></div>
             </div>
 
@@ -409,7 +429,9 @@
                 </p>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 big_pic">
-                <img src="img/PassOn/main.jpg" alt="" class="img-responsive" />
+                <img src="blank.gif" class="lazy img-responsive"
+                    data-src="img/PassOn/main.jpg" alt="Home" width="555">
+                <!-- <img src="img/PassOn/main.jpg" alt="" class="img-responsive" /> -->
                 <div class="h-120"></div>
             </div>
         </div>
@@ -444,15 +466,20 @@
                 </p>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 big_pic">
-                <img src="img/PassOn/messaging.jpg" alt=""
-                    class="img-responsive" />
+                <img src="blank.gif" class="lazy img-responsive"
+                    data-src="img/PassOn/messaging.jpg" alt="Home" width="555">
+                <!-- <img src="img/PassOn/messaging.jpg" alt=""
+                    class="img-responsive" /> -->
                 <div class="h-120"></div>
             </div>
         </div>
         <div class="row row-eq-height">
             <div class="col-md-6 col-sm-6 col-xs-6 big_pic">
-                <img src="img/PassOn/profile.jpg" alt=""
-                    class="img-responsive" />
+                <img src="blank.gif" class="lazy img-responsive"
+                    data-src="img/PassOn/profile.jpg" alt="Home" width="555">
+
+                <!-- <img src="img/PassOn/profile.jpg" alt=""
+                    class="img-responsive" /> -->
                 <div class="h-120"></div>
             </div>
 
