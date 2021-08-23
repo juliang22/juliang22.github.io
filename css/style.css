@@ -1588,6 +1588,19 @@ textarea:focus {
 
     #profile {
         width: 350px;
+        height: 350px;
+    }
+
+    #fitwit h1 {
+        font-size: 40px;
+    }
+
+    #passon h1 {
+        font-size: 40px;
+    }
+
+    #palette h1 {
+        font-size: 40px;
     }
 
     .bye_line {
@@ -1601,6 +1614,7 @@ textarea:focus {
     .position-title>h2 {
         font-size: 40px;
         line-height: 30px;
+        text-align: center;
     }
 
     .gold {
@@ -1634,12 +1648,7 @@ textarea:focus {
 
     .inner-vid {
         height: 100%;
-    }
-
-    img.img-responsive {
-        padding: 5px;
-        height: 250px;
-        width: 250px;
+        padding: 8px;
     }
 
     .not-regular {
@@ -1690,13 +1699,13 @@ textarea:focus {
         margin: 0;
     }
 
-    .carousel-inner>.item>a>img,
+    /* .carousel-inner>.item>a>img,
     .carousel-inner>.item>img,
     .img-responsive,
     .thumbnail a>img,
     .thumbnail>img {
         height: auto;
-    }
+    } */
 
 }
 
@@ -1713,12 +1722,10 @@ textarea:focus {
         margin: 0 60px;
     }
 
-    .skills {
-        margin-bottom: 150px;
-    }
-
     #profile {
         width: 300px;
+        height: 300px;
     }
+
 
 }
