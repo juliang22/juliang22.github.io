@@ -524,11 +524,10 @@ h1 {
 }
 
 .box-logo>a>img {
-    width: 350px;
+    width: 280px;
     position: absolute;
-    height: 220px;
-    top: 0;
-    margin-top: -28px;
+    margin-top: 29px;
+    margin-left: 35px;
 }
 
 img.img-responsive {
@@ -1682,6 +1681,19 @@ textarea:focus {
 
     .cta-btn {
         width: 50%;
+    }
+
+    .box-logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-logo>a>img {
+        position: relative;
+        width: 280px;
+        margin-top: 29px;
+        margin-left: 0px;
     }
 }
 
