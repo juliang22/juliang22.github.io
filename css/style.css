@@ -57,7 +57,8 @@ body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.8;
-    color: #999
+    color: #999;
+    background-color: #FCFCFC;
 }
 
 .responsive-message {
@@ -938,6 +939,7 @@ b i:last-child {
 
 .skills {
     height: 100vh;
+    background-color: #FFFFFF;
 }
 
 .about-me {
@@ -1687,6 +1689,10 @@ textarea:focus {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+
+    .container-fluid {
+        background-color: inherit;
     }
 
     .box-logo>a>img {
