@@ -384,7 +384,7 @@ a.nav-itm {
 .navlink:hover {
     text-decoration: none;
     color: #ffbf00;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .item {
