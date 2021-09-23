@@ -1398,6 +1398,10 @@ footer img {
     margin-top: 0;
 }
 
+#hov:hover {
+    color: #ffbf00;
+}
+
 
 /* contact page
 ==================================================*/
